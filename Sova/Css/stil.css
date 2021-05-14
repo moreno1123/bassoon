@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: snow;
+    font-size: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F303A;
+    overflow-x: hidden;
+}
+.sekcija{
+    min-height: 100vh;
+    background-color: #2F303A;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 800px){
+}

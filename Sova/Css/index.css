@@ -1,0 +1,75 @@
+#index{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.logo .logo-okvir{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+.logo .logo-okvir .logoo{
+    background-image: url(/Images/logo2.svg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.logo .sova{
+    align-self: center;
+    font-size: 4em;
+    font-weight: 600;
+}
+.sekcija .tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 2;
+}
+.sekcija .tekst .podnaslov{
+    margin-top: 10px;
+}
+@media all and (max-width: 1200px){
+    .sekcija .tekst{
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width: 800px){
+    #index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo .logo-okvir{
+        margin: 20px 0 0 0;
+        padding: 0;
+        height: 60vh;
+        min-width: 60vw;
+        position: relative;
+    }
+    .logo .sova{
+        position: absolute;
+        top: 0;
+    }
+    .tekst .naslov{
+        text-align: center;
+    }
+    .tekst .podnaslov{
+        text-align: center;
+    }
+}
+@media all and (max-width: 370px){
+    .tekst .naslov{
+        margin: 0;
+        padding: 0;
+    }
+}

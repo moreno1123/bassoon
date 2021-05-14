@@ -1,0 +1,67 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+    background-color: rgb(10, 10, 14);
+}
+footer .mreze{
+    max-height: 20%;
+    max-width: 20%;
+    margin: 10px;
+}
+footer .mreze img{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(15, 79, 199);
+    border-radius: 15px;
+}
+footer .kontakt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer .kontakt .mail,
+footer .kontakt .fiksni,
+footer .kontakt .fax{
+    margin: 20px;
+}
+footer .moreno{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 80vw;
+    justify-content: space-between;
+}
+footer .moreno p.sova{
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+@media all and (max-width: 800px){
+    footer{
+        height: 100vh;
+        justify-content: space-around;
+    }
+    footer .kontakt{
+        flex-direction: column;
+        line-height: 200%;
+        text-align: center;
+    }
+    footer .moreno{
+        text-align: center;
+        align-items: center;
+    }
+    footer .moreno .copy{
+        font-size: .7rem;
+        width: 30vw;
+    }
+    footer .mreze{
+        max-height: 70%;
+        max-width: 70%;
+    }
+}

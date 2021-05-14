@@ -1,0 +1,84 @@
+nav{
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 0;
+    align-self: flex-end;
+    right: 5%;
+    font-size: 1.5rem;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+}
+.lista li{
+    list-style: none;
+    padding: 0 15px;
+    letter-spacing: 0.5px;
+}
+.lista li a{
+    text-decoration: none;
+    color: inherit;
+}
+.lista li a:active,
+.lista li a:hover{
+    color: rgb(80, 112, 145);
+}
+.lista li:nth-child(4){
+    border-left: 1.5px solid;
+    border-radius: 1px;
+}
+.hamburger{
+    height: 35px;
+    width: 40px;
+    display: none;
+}
+.hamburger .crta{
+    width: 100%;
+    height: 5px;
+    background-color: snow;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.hamburger .crta:nth-child(1){
+    margin-top: 0;
+}
+.hamburger .crta:nth-child(3){
+    margin-bottom: 0px;
+}
+.home{
+    width: 40px;
+    height: 40px;
+    display: none;
+    overflow-y: hidden;
+}
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 20;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #4682b4;
+    }
+    .lista{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        position: relative;
+        z-index: 2;
+        align-self: center;
+    }
+    .home{
+        display: block;
+        position: relative;
+        z-index: 2;
+        align-self: center;
+    }
+}
